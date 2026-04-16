@@ -1,0 +1,21 @@
+internal_ref,trade_date,value_date,counterparty,nomura_entity,product_type,currency,currency_pair,notional,rate,direction,settlement_method,counterparty_bic,nomura_bic
+NOM-FX-20260414-0042,14-Apr-2026,14-Apr-2026,Goldman Sachs International,Nomura International plc,FX Spot,USD,USD/JPY,25000000,153.42,Nomura Buys USD / Sells JPY,CLS,GSILUS33XXX,NOMUJPJTXXX
+NOM-FX-20260414-0045,14-Apr-2026,16-Apr-2026,Goldman Sachs International,Nomura International plc,FX Forward,USD,USD/JPY,10000000,153.55,Nomura Sells USD / Buys JPY,CLS,GSILUS33XXX,NOMUJPJTXXX
+NOM-FX-20260410-0056,10-Apr-2026,14-Apr-2026,HSBC Bank plc,Nomura International plc,FX Spot,GBP,GBP/USD,5000000,1.2945,Nomura Buys GBP / Sells USD,CLS,HSBCGB2LXXX,NOMUGB2LXXX
+NOM-FX-20260410-0188,10-Apr-2026,16-Apr-2026,Deutsche Bank AG,Nomura Securities Co Ltd,FX Forward,EUR,EUR/USD,120000000,1.0842,Nomura Sells EUR / Buys USD,CLS,DEUTDEFFXXX,NOMUJPJTXXX
+NOM-FX-20260410-0145,10-Apr-2026,17-Apr-2026,Goldman Sachs International,Nomura International plc,FX Forward,USD,GBP/USD,45000000,1.2935,Nomura Buys GBP / Sells USD,CLS,GSILUS33XXX,NOMUGB2LXXX
+NOM-FX-20260414-0067,14-Apr-2026,14-Apr-2026,Citigroup Global Markets,Nomura International plc,FX NDF,USD,USD/JPY,30000000,153.50,Nomura Buys USD / Sells JPY,Bilateral,CITIUS33XXX,NOMUJPJTXXX
+NOM-FX-20260414-0089,14-Apr-2026,16-Apr-2026,UBS AG,Nomura Securities Co Ltd,FX Spot,EUR,EUR/GBP,8500000,0.8567,Nomura Sells EUR / Buys GBP,Bilateral,UBSWCHZHXXX,NOMUJPJTXXX
+NOM-FX-20260413-0201,13-Apr-2026,16-Apr-2026,BNP Paribas,Nomura International plc,FX Swap,CHF,USD/CHF,18000000,0.8821,Nomura Buys USD / Sells CHF near leg; reverse far leg,Pending,BNPAFRPPXXX,NOMUJPJTXXX
+NOM-FX-20260411-0112,11-Apr-2026,15-Apr-2026,Morgan Stanley,Nomura Securities Co Ltd,FX NDF,USD,USD/JPY,15000000,153.10,Nomura Buys USD / Sells JPY,Bilateral,MSTCUS33XXX,NOMUJPJTXXX
+NOM-IRS-20260412-0155,12-Apr-2026,16-Apr-2026,HSBC Bank plc,Nomura International plc,Interest Rate Swap,GBP,,40000000,4.15,Nomura Receives Fixed 4.15% / Pays SONIA,MarkitWire,HSBCGB2LXXX,NOMUGB2LXXX
+NOM-IRS-20260410-0044,10-Apr-2026,14-Apr-2026,UBS AG,Nomura International plc,Interest Rate Swap,CHF,,25000000,1.75,Nomura Receives Fixed 1.75% / Pays SARON,MarkitWire,UBSWCHZHXXX,NOMUGB2LXXX
+NOM-IRS-20260412-0178,12-Apr-2026,16-Apr-2026,Deutsche Bank AG,Nomura Financial Products Europe GmbH,Interest Rate Swap,EUR,,60000000,2.85,Nomura Pays Fixed 2.85% / Receives EURIBOR 6M,MarkitWire,DEUTDEFFXXX,NOMUDEFFXXX
+NOM-CDS-20260410-0034,10-Apr-2026,14-Apr-2026,BNP Paribas,Nomura International plc,Credit Default Swap,USD,,20000000,,Nomura Sells Protection,DTCC,BNPAFRPPXXX,NOMUGB2LXXX
+NOM-XCCY-20260411-0098,11-Apr-2026,17-Apr-2026,Morgan Stanley,Nomura International plc,Cross Currency Swap,EUR,,35000000,3.10,Nomura Pays EUR Fixed 3.10% / Receives USD SOFR,DTCC,MSTCUS33XXX,NOMUGB2LXXX
+NOM-FXS-20260410-0147,10-Apr-2026,14-Apr-2026,JPMorgan Chase,Nomura International plc,FX Swap,USD,EUR/USD,95000000,1.0850,Nomura Sells EUR / Buys USD near leg; reverse far leg,CLS,CHASUS33XXX,NOMUGB2LXXX
+NOM-FX-20260414-0150,14-Apr-2026,16-Apr-2026,JPMorgan Chase,Nomura International plc,FX Spot,USD,EUR/USD,20000000,1.0855,Nomura Buys EUR / Sells USD,CLS,CHASUS33XXX,NOMUGB2LXXX
+NOM-FX-20260411-0220,11-Apr-2026,15-Apr-2026,HSBC Bank plc,Nomura International plc,FX Forward,USD,USD/HKD,22000000,7.8215,Nomura Buys USD / Sells HKD,CLS,HSBCGB2LXXX,NOMUGB2LXXX
+NOM-FX-20260412-0231,12-Apr-2026,16-Apr-2026,Goldman Sachs International,Nomura International plc,FX Spot,EUR,EUR/CHF,9500000,0.9412,Nomura Sells EUR / Buys CHF,CLS,GSILUS33XXX,NOMUGB2LXXX
+NOM-IRS-20260414-0260,14-Apr-2026,18-Apr-2026,JPMorgan Chase,Nomura International plc,Interest Rate Swap,USD,,50000000,3.45,Nomura Pays Fixed 3.45% / Receives SOFR,MarkitWire,CHASUS33XXX,NOMUGB2LXXX
+NOM-FX-20260413-0277,13-Apr-2026,15-Apr-2026,Barclays Capital,Nomura International plc,FX Spot,GBP,EUR/GBP,7200000,0.8502,Nomura Buys EUR / Sells GBP,CLS,BARCGB2LXXX,NOMUGB2LXXX

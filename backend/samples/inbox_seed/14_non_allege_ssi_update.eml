@@ -1,0 +1,28 @@
+From: SSI Changes <ssi.changes@jpmorgan.com>
+To: nomura.settlements@nomura.com
+Subject: JPMorgan USD Nostro SSI Change Notice - Effective 01-May-2026
+Date: Mon, 13 Apr 2026 14:00:00 +0000
+Message-ID: <JPM-SSI-20260513-001@jpmorgan.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Dear Counterparty,
+
+This notice is to advise that JPMorgan Chase Bank N.A. is changing its USD nostro settlement instructions effective 01-May-2026. All counterparties should update their standing instructions database accordingly.
+
+Old SSI (valid until 30-Apr-2026):
+  Beneficiary Bank: JPMorgan Chase Bank N.A. New York
+  BIC:              CHASUS33XXX
+  Account:          400-98765-43210
+
+New SSI (effective 01-May-2026):
+  Beneficiary Bank: JPMorgan Chase Bank N.A. New York
+  BIC:              CHASUS33XXX
+  Account:          400-11111-22222
+
+This is an informational update only. No trade to reconfirm.
+
+Please acknowledge receipt to ssi.changes@jpmorgan.com.
+
+Regards,
+JPMorgan Corporate SSI Management

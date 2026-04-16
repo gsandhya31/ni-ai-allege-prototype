@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OTC Allege Automation — Visual &amp; Conceptual Overview</title>
+  <style>
+    :root {
+      --bg: #0f1419;
+      --card: #1a222d;
+      --border: #2d3a4d;
+      --text: #e8eef5;
+      --muted: #9aa8b8;
+      --accent: #e85d4c;
+      --accent-dim: rgba(232, 93, 76, 0.15);
+      --ok: #3d9a6a;
+      --warn: #d4a024;
+      --font: "Segoe UI", system-ui, -apple-system, sans-serif;
+      --mono: ui-monospace, "Cascadia Code", monospace;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+      font-size: 15px;
+    }
+    header {
+      padding: 2rem 1.5rem 1.5rem;
+      border-bottom: 1px solid var(--border);
+      background: linear-gradient(180deg, #15202b 0%, var(--bg) 100%);
+    }
+    header h1 {
+      margin: 0 0 0.5rem;
+      font-size: 1.65rem;
+      font-weight: 650;
+      letter-spacing: -0.02em;
+    }
+    header p {
+      margin: 0;
+      color: var(--muted);
+      max-width: 52rem;
+    }
+    main {
+      max-width: 56rem;
+      margin: 0 auto;
+      padding: 1.5rem 1.25rem 3rem;
+    }
+    section {
+      margin-bottom: 2.5rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+      margin: 0 0 1rem;
+      padding-bottom: 0.35rem;
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+    }
+    h3 {
+      font-size: 1rem;
+      color: var(--muted);
+      margin: 1.25rem 0 0.5rem;
+      font-weight: 600;
+    }
+    p, li { color: var(--text); }
+    ul { padding-left: 1.25rem; }
+    li { margin: 0.35rem 0; }
+    .muted { color: var(--muted); font-size: 0.92rem; }
+    .callout {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1rem 1.1rem;
+      margin: 1rem 0;
+    }
+    .callout.warn {
+      border-color: rgba(212, 160, 36, 0.45);
+      background: rgba(212, 160, 36, 0.08);
+    }
+    .callout.ok {
+      border-color: rgba(61, 154, 106, 0.45);
+      background: rgba(61, 154, 106, 0.08);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      margin: 0.75rem 0;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 0.55rem 0.65rem;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: var(--card);
+      color: var(--muted);
+      font-weight: 600;
+    }
+    tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
+    code { font-family: var(--mono); font-size: 0.86em; background: #0d1117; padding: 0.12em 0.35em; border-radius: 4px; }
+    .pipeline-scroll {
+      overflow-x: auto;
+      overflow-y: hidden;
+      margin: 1rem 0;
+      padding-bottom: 2px;
+      -webkit-overflow-scrolling: touch;
+    }
+    .pipeline {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: stretch;
+      gap: 0.35rem;
+      margin: 0;
+      width: max-content;
+      min-width: 100%;
+    }
+    .pipe-step {
+      flex: 0 0 auto;
+      width: 6.75rem;
+      min-width: 6.75rem;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.55rem 0.4rem;
+      text-align: center;
+      position: relative;
+    }
+    .pipe-step strong {
+      display: block;
+      font-size: 0.74rem;
+      color: var(--accent);
+      margin-bottom: 0.2rem;
+      white-space: nowrap;
+    }
+    .pipe-step span {
+      font-size: 0.68rem;
+      color: var(--muted);
+      line-height: 1.3;
+      display: block;
+      hyphens: auto;
+    }
+    .pipe-arrow {
+      align-self: center;
+      color: var(--muted);
+      font-size: 1rem;
+      flex: 0 0 auto;
+      padding: 0 0.05rem;
+    }
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    @media (max-width: 720px) { .two-col { grid-template-columns: 1fr; } }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      color: var(--muted);
+      font-size: 0.82rem;
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>OTC Allege Automation — Visual &amp; Conceptual Overview</h1>
+    <p>
+      Single-page reference for business context, rules, stack, architecture, sample inventory, assumptions, and open items.
+      Grounded in the <strong>Allege Prototype</strong> codebase (React UI + FastAPI pipeline). 
+    </p>
+  </header>
+
+  <main>
+    <section id="business-context">
+      <h2>1. Business context &amp; scenario clarity</h2>
+
+      <h3>Who initiates the allege?</h3>
+      <ul>
+        <li><strong>Primary flow:</strong> Counterparty (or their ops / confirmations mailbox) emails <strong>Nomura</strong> to allege or chase a trade, SSI, or confirmation gap.</li>
+        <li><strong>Outbound chase (future):</strong> Nomura-initiated follow-up to the counterparty is <em>not</em> the main scenario in this prototype; it is listed as a future enhancement.</li>
+      </ul>
+
+      <h3>What “allege” means (OTC)</h3>
+      <p>
+        An <strong>allege</strong> is a live dispute or break: the counterparty believes a trade exists (or should be confirmed / settled) in a way that does not align with Nomura’s booking, instructions, or affirmation state.
+        It is distinct from routine confirmations, newsletters, or “issue resolved” follow-ups.
+      </p>
+
+      <h3>End-to-end workflow (conceptual)</h3>
+      <div class="pipeline-scroll">
+        <div class="pipeline" aria-label="Pipeline steps">
+          <div class="pipe-step"><strong>Email arrives</strong><span>Inbound message ingested</span></div>
+          <span class="pipe-arrow" aria-hidden="true">→</span>
+          <div class="pipe-step"><strong>Classify</strong><span>Allege vs not-allege</span></div>
+          <span class="pipe-arrow">→</span>
+          <div class="pipe-step"><strong>Extract</strong><span>Structured fields + CP hints</span></div>
+          <span class="pipe-arrow">→</span>
+          <div class="pipe-step"><strong>Match</strong><span>BO → MO → FO lookup</span></div>
+          <span class="pipe-arrow">→</span>
+          <div class="pipe-step"><strong>Draft</strong><span>Reply + suggested action</span></div>
+          <span class="pipe-arrow">→</span>
+          <div class="pipe-step"><strong>Analyst</strong><span>Review, send, resolve</span></div>
+        </div>
+      </div>
+      <p class="muted">Implementation: orchestrated in <code>backend/app/services/pipeline.py</code> with discrete services (parser, classifier, extractor, counterparty resolver, matcher, drafter).</p>
+    </section>
+
+    <section id="business-rules">
+      <h2>2. Business logic rules</h2>
+
+      <h3>Counterparty inference (priority order)</h3>
+      <p>Implemented in <code>backend/app/services/counterparty.py</code>:</p>
+      <ol>
+        <li><strong>Stated</strong> — explicit counterparty in body / extracted <code>counterparty_stated</code> (highest confidence).</li>
+        <li><strong>Domain-inferred</strong> — sender domain maps to a canonical bank via <code>DOMAIN_TO_COUNTERPARTY</code> in <code>backend/app/config.py</code> (only if domain is <em>not</em> a broker domain).</li>
+        <li><strong>Broker-origin</strong> — if sender domain is in <code>BROKER_DOMAINS</code>, the pipeline does <em>not</em> treat the broker as counterparty; counterparty must come from the body / extraction. Otherwise outcome flags low confidence / analyst verification.</li>
+        <li><strong>Sender-name fallback</strong> — unknown domain: best-effort use of display name from headers, with warning-level confidence.</li>
+      </ol>
+      <div class="callout warn">
+        <strong>Why broker ≠ counterparty</strong><br />
+        Inter-dealer brokers (e.g. TP ICAP, Tradition) relay economics between banks; the legal counterparty to Nomura is the bank on the trade, not the broker’s domain. Mapping broker domains to a single bank would be wrong without body-level identification.
+      </div>
+
+      <h3>Classification scope</h3>
+      <p><code>backend/app/services/classifier.py</code> — classification uses the <strong>latest reply only</strong>, not the full thread. Resolved-reply keywords (e.g. “found the trade”, “no further action”) force <strong>not an allege</strong>.</p>
+
+      <h3>Exact match logic</h3>
+      <ul>
+        <li><strong>Systems order:</strong> <strong>BO → MO → FO</strong> CSV reference files; <strong>stop at first system</strong> that returns at least one candidate (<code>matcher.py</code>).</li>
+        <li><strong>Per product type:</strong> key fields differ (FX vs IRS vs CDS, etc.) — see <code>KEY_FIELDS_BY_PRODUCT</code> in <code>matcher.py</code> (trade date, counterparty, pair/currency, notional, rate, direction, value date as applicable).</li>
+        <li><strong>No fuzzy matching</strong> in this prototype — normalized string / numeric equality on compared fields.</li>
+      </ul>
+
+      <h3>Low-confidence flag (&lt; 0.6)</h3>
+      <p>Classifier can emit confidence &lt; 0.6. Pipeline still processes the message; the UI surfaces a <strong>“Verify classification”</strong> style indicator for analysts (see dashboard when <code>aiConfidence &lt; 0.6</code>).</p>
+
+      <h3>Match vs mismatch vs not-found</h3>
+      <div class="two-col">
+        <div class="callout ok">
+          <strong>Matched</strong><br />
+          At least one booking row found; compared key fields align with extracted / counterparty line.
+        </div>
+        <div class="callout warn">
+          <strong>Mismatch</strong><br />
+          Booking found but one or more compared fields differ (detail / entity / rate / SSI path per pipeline rules).
+        </div>
+      </div>
+      <div class="callout" style="margin-top:0.5rem;">
+        <strong>No booking / not found</strong><br />
+        No row matched across BO→MO→FO under exact rules — UI may show “not found in BO, MO, or FO” or equivalent; distinct from field-level mismatch after a hit.
+      </div>
+    </section>
+
+    <section id="tech-stack">
+      <h2>3. Tech stack</h2>
+      <table>
+        <thead>
+          <tr><th>Layer</th><th>Technology (prototype)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Frontend</td><td>React (Vite), TypeScript, Tailwind CSS, shadcn/ui (Radix), React Router</td></tr>
+          <tr><td>Backend API</td><td>Python 3, <strong>FastAPI</strong>, Uvicorn; SQLite for cases &amp; audit</td></tr>
+          <tr><td>LLM</td><td>Optional Anthropic Claude (env-driven); rules fallback in classifier; <code>NoLLM</code> path when disabled</td></tr>
+          <tr><td>Matching engine</td><td>Pandas-backed exact match over reference CSVs (BO/MO/FO)</td></tr>
+          <tr><td>Runtime / ops</td><td>Local dev: file-drop inbox under <code>backend/data/inbox</code>, <code>sent/</code> for prototype outbound; CORS to Vite dev server</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="architecture">
+      <h2>4. Architecture note</h2>
+      <p>
+        The backend implements a <strong>deterministic pipeline</strong> — a fixed sequence of steps with explicit branching (classify → extract → resolve CP → match → diff → draft → persist).
+        It is <strong>not an autonomous agent</strong>: no tool loop, no planner revisiting steps based on emergent sub-goals.
+      </p>
+      <p>
+        <strong>Future agent layer (when it would make sense):</strong> ambiguous broker-originated threads, multi-match disambiguation needing clarifying questions, cross-system reconciliation, or adaptive retrieval across many mailboxes could benefit from an agent that orchestrates LLM + tools with human approval gates — still keeping settlement actions human-in-the-loop.
+      </p>
+    </section>
+
+    <section id="sample-inventory">
+      <h2>5. Sample email inventory</h2>
+      <p>
+        Seeded <code>.eml</code> files under <code>backend/data/inbox/</code> (mirrored under <code>backend/samples/inbox_seed/</code>).
+        <strong>15</strong> numbered scenarios — use the table below as the working inventory (allege vs non-allege intent follows filenames and classifier design).
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>File</th>
+            <th>Intent</th>
+            <th>Scenario (short)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><code>01_straight_match_goldman.eml</code></td><td>Allege</td><td>Clean match after BO/MO/FO lookup</td></tr>
+          <tr><td><code>02_rate_mismatch_db.eml</code></td><td>Allege</td><td>Rate discrepancy vs booking</td></tr>
+          <tr><td><code>03_no_match_barclays.eml</code></td><td>Allege</td><td>No booking found</td></tr>
+          <tr><td><code>04_multi_match_citi.eml</code></td><td>Allege</td><td>Multiple candidates — disambiguation</td></tr>
+          <tr><td><code>05_thread_resolved.eml</code></td><td>Non-allege</td><td>Latest reply indicates resolution</td></tr>
+          <tr><td><code>06_counterparty_missing.eml</code></td><td>Allege</td><td>Counterparty inference stress case</td></tr>
+          <tr><td><code>07_broker_sender_tpicap.eml</code></td><td>Allege</td><td>Broker sender domain — CP from body</td></tr>
+          <tr><td><code>08_non_allege_noise.eml</code></td><td>Non-allege</td><td>Noise / unrelated</td></tr>
+          <tr><td><code>09_entity_mismatch_hsbc.eml</code></td><td>Allege</td><td>Entity / legal name mismatch</td></tr>
+          <tr><td><code>10_non_allege_newsletter.eml</code></td><td>Non-allege</td><td>Marketing / newsletter</td></tr>
+          <tr><td><code>11_non_allege_ooo.eml</code></td><td>Non-allege</td><td>Out-of-office</td></tr>
+          <tr><td><code>12_non_allege_kyc_request.eml</code></td><td>Non-allege</td><td>KYC / documentation request</td></tr>
+          <tr><td><code>13_non_allege_bounce.eml</code></td><td>Non-allege</td><td>Delivery bounce / auto message</td></tr>
+          <tr><td><code>14_non_allege_ssi_update.eml</code></td><td>Non-allege</td><td>Operational SSI update (not a live allege)</td></tr>
+          <tr><td><code>15_match_with_mismatch_ubs.eml</code></td><td>Allege</td><td>Hit with field mismatch (e.g. settlement path)</td></tr>
+        </tbody>
+      </table>
+      <p class="muted"><strong>Counts (by table above):</strong> 8 allege-oriented scenarios · 7 non-allege scenarios.</p>
+    </section>
+
+    <section id="assumptions">
+      <h2>6. Assumptions &amp; rules applied</h2>
+      <ul>
+        <li>Stop at <strong>first hit</strong> across BO → MO → FO when searching for booking candidates.</li>
+        <li><strong>Latest reply only</strong> drives allege vs not-allege classification.</li>
+        <li><strong>No fuzzy matching</strong> on trade keys in the reference matcher (exact normalized compare).</li>
+        <li>Inbound source in UI may show as <strong>Email</strong> for all file-driven samples (channel abstraction).</li>
+        <li>Case IDs in the demo pipeline use a deterministic hash-style id; production would adopt Nomura’s mailbox / message-id scheme (see open points).</li>
+      </ul>
+    </section>
+
+    <section id="open-points">
+      <h2>7. Open points &amp; future enhancements</h2>
+      <ul>
+        <li><strong>Live thread updates</strong> — continuous sync of conversation state vs one-shot latest body.</li>
+        <li><strong>Case ID generation</strong> — align with Nomura’s production mailbox / Message-ID conventions.</li>
+        <li><strong>Real mailbox ingestion</strong> — IMAP / MS Graph / enterprise mail bus instead of file-drop inbox.</li>
+        <li><strong>Real SMTP send</strong> — production mail submission vs prototype <code>sent/</code> folder behaviour.</li>
+        <li><strong>Agent layer</strong> — for hard cases (broker ambiguity, multi-match, cross-system chase) under governance.</li>
+        <li><strong>Analyst workflows</strong> — e.g. named workflows (e.g. “Arati”) / queue rules and assignment logic beyond demo filters.</li>
+        <li><strong>Real system integration</strong> — Murex, DTCC, MarkitWire, SWIFT gateways, etc., instead of CSV stand-ins.</li>
+        <li><strong>Outbound-chase workflow</strong> — Nomura-initiated chases as first-class use case.</li>
+        <li><strong>LLM hosting options</strong> — Hugging Face endpoints or on-prem models as production alternatives to cloud Claude.</li>
+        <li><strong>Broker list management</strong> — admin UI to edit <code>BROKER_DOMAINS</code> / domain maps without code deploy.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    OTC Allege Prototype · Visual overview · Generated for documentation; keep in sync with code and BRD/DESIGN.
+  </footer>
+</body>
+</html>

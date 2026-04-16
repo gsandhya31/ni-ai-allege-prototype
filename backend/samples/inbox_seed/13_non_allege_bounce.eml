@@ -1,0 +1,24 @@
+From: Mail Delivery Subsystem <mailer-daemon@nomura.com>
+To: nomura.settlements@nomura.com
+Subject: Undelivered Mail Returned to Sender
+Date: Tue, 14 Apr 2026 10:15:00 +0000
+Message-ID: <bounce-20260414-001@nomura.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+This is the mail system at host mx1.nomura.com.
+
+Your message could not be delivered to one or more recipients. Full delivery report follows:
+
+<settlements.oldcontact@counterparty-domain-that-doesnt-exist.xyz>:
+    host mx.counterparty-domain-that-doesnt-exist.xyz[198.51.100.22] said: 550 5.1.1 Recipient address rejected: User unknown (in reply to RCPT TO command)
+
+The original message header is included below.
+
+Reporting-MTA: dns; mx1.nomura.com
+Received-From-MTA: dns; internal-relay.nomura.com
+Arrival-Date: Tue, 14 Apr 2026 10:14:30 +0000
+
+Final-Recipient: rfc822; settlements.oldcontact@counterparty-domain-that-doesnt-exist.xyz
+Action: failed
+Status: 5.1.1

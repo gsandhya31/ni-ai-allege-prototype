@@ -1,0 +1,30 @@
+From: Broker Confirmations <confirmations@tpicap.com>
+To: nomura.settlements@nomura.com
+Subject: Trade Confirmation on behalf of HSBC Bank plc - HSBC-FX-20260414-9900
+Date: Tue, 14 Apr 2026 11:00:00 +0000
+Message-ID: <TPICAP-9900@tpicap.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+To: Nomura Settlements
+Sent on behalf of: HSBC Bank plc
+
+We are chasing the below FX Forward trade which remains unmatched on HSBC's books.
+
+HSBC Trade Ref:     HSBC-FX-20260414-9900
+Counterparty:       HSBC Bank plc
+Nomura Entity:      Nomura International plc
+Product:            FX Forward
+Trade Date:         14-Apr-2026
+Value Date:         16-Apr-2026
+Currency Pair:      EUR/USD
+Notional:           USD 15,000,000
+Rate:               1.0860
+Direction:          Nomura Sells EUR / Buys USD
+Settlement Method:  CLS
+HSBC BIC:           HSBCGB2LXXX
+
+This trade was executed through TP ICAP on 14-Apr. HSBC has confirmed their side and asks that Nomura investigate the booking. Please respond with trade status.
+
+Regards,
+TP ICAP Broker Confirmations Team

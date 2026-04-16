@@ -1,0 +1,11 @@
+internal_ref,trade_date,value_date,counterparty,nomura_entity,product_type,currency,currency_pair,notional,rate,direction,settlement_method,counterparty_bic,nomura_bic,status
+NOM-MO-20260414-0301,14-Apr-2026,15-Apr-2026,Citigroup Global Markets,Nomura International plc,FX Spot,JPY,USD/JPY,12000000,153.28,Nomura Sells USD / Buys JPY,Bilateral,CITIJPJTXXX,NOMUJPJTXXX,Pending Confirmation
+NOM-MO-20260414-0302,14-Apr-2026,15-Apr-2026,Citigroup Global Markets,Nomura International plc,FX Spot,JPY,USD/JPY,12000000,153.28,Nomura Sells USD / Buys JPY,Bilateral,CITIJPJTXXX,NOMUJPJTXXX,Pending Confirmation
+NOM-MO-20260411-0325,11-Apr-2026,14-Apr-2026,JPMorgan Chase,Nomura International plc,Interest Rate Swap,USD,,75000000,3.25,Nomura Pays Fixed 3.25% / Receives SOFR,DTCC,CHASUS33XXX,NOMUGB2LXXX,Pending Affirmation
+NOM-MO-20260412-0340,12-Apr-2026,16-Apr-2026,HSBC Bank plc,Nomura International plc,Interest Rate Swap,GBP,,40000000,4.15,Nomura Receives Fixed 4.15% / Pays SONIA,MarkitWire,HSBCGB2LXXX,NOMUGB2LXXX,Entity Discrepancy
+NOM-MO-20260413-0360,13-Apr-2026,15-Apr-2026,Citigroup Global Markets,Nomura International plc,FX Spot,JPY,USD/JPY,12000000,153.28,Nomura Sells USD / Buys JPY,Bilateral,CITIJPJTXXX,NOMUJPJTXXX,Pending Confirmation
+NOM-MO-20260414-0380,14-Apr-2026,16-Apr-2026,JPMorgan Chase,Nomura International plc,FX Spot,USD,EUR/USD,20000000,1.0855,Nomura Buys EUR / Sells USD,CLS,CHASUS33XXX,NOMUGB2LXXX,Pending Nostro
+NOM-MO-20260414-0390,14-Apr-2026,14-Apr-2026,Goldman Sachs International,Nomura International plc,FX Spot,USD,EUR/USD,5000000,1.0865,Nomura Buys EUR / Sells USD,CLS,GSILUS33XXX,NOMUGB2LXXX,Pending Confirmation
+NOM-MO-20260413-0714,13-Apr-2026,16-Apr-2026,BNP Paribas,Nomura International plc,FX Swap,CHF,USD/CHF,18000000,0.8821,Nomura Buys USD / Sells CHF near leg; reverse far leg,CLS,BNPAFRPPXXX,NOMUJPJTXXX,Pending SSI
+NOM-MO-20260411-0388,11-Apr-2026,17-Apr-2026,Morgan Stanley,Nomura International plc,Cross Currency Swap,EUR,,35000000,3.10,Nomura Pays EUR Fixed 3.10% / Receives USD SOFR,DTCC,MSTCUS33XXX,NOMUGB2LXXX,Pending Credit Approval
+NOM-MO-20260414-0410,14-Apr-2026,17-Apr-2026,Deutsche Bank AG,Nomura International plc,FX Forward,EUR,EUR/USD,50000000,1.0848,Nomura Buys EUR / Sells USD,CLS,DEUTDEFFXXX,NOMUGB2LXXX,Pending Confirmation

@@ -1,0 +1,29 @@
+From: HSBC Ops <hsbc.ops@hsbc.com>
+To: nomura.settlements@nomura.com
+Subject: IRS Entity Discrepancy - HSBC-IRS-20260412-2290
+Date: Mon, 13 Apr 2026 14:00:00 +0000
+Message-ID: <HSBC-IRS-2290@hsbc.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Nomura Operations,
+
+We have submitted IRS confirmation HSBC-IRS-20260412-2290 via MarkitWire against Nomura Financial Products Europe GmbH. Your system appears to show Nomura International plc. Please clarify the correct legal entity for this trade so we can amend accordingly.
+
+HSBC Trade Ref:    HSBC-IRS-20260412-2290
+Counterparty:      HSBC Bank plc
+Nomura Entity:     Nomura Financial Products Europe GmbH
+Product:           Interest Rate Swap
+Trade Date:        12-Apr-2026
+Value Date:        16-Apr-2026
+Notional:          GBP 40,000,000
+Currency:          GBP
+Fixed Rate:        4.15%
+Direction:         Nomura Receives Fixed 4.15% / Pays SONIA
+Settlement:        MarkitWire
+BIC:               HSBCGB2LXXX
+
+Please confirm the correct booking entity at your earliest.
+
+Regards,
+HSBC Rates Operations

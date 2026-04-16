@@ -1,0 +1,8 @@
+internal_ref,trade_date,value_date,counterparty,nomura_entity,product_type,currency,currency_pair,notional,rate,direction,settlement_method,counterparty_bic,nomura_bic,trader,desk
+NOM-FO-20260414-0501,14-Apr-2026,16-Apr-2026,HSBC Bank plc,Nomura International plc,FX Forward,USD,EUR/USD,15000000,1.0860,Nomura Sells EUR / Buys USD,CLS,HSBCGB2LXXX,NOMUGB2LXXX,T.Ogawa,FX London
+NOM-FO-20260414-0510,14-Apr-2026,16-Apr-2026,BNP Paribas,Nomura International plc,FX Spot,EUR,EUR/USD,7500000,1.0858,Nomura Buys EUR / Sells USD,Bilateral,BNPAFRPPXXX,NOMUGB2LXXX,T.Ogawa,FX London
+NOM-FO-20260414-0520,14-Apr-2026,14-Apr-2026,Credit Suisse,Nomura Securities Co Ltd,FX Spot,USD,USD/JPY,5000000,153.45,Nomura Buys USD / Sells JPY,CLS,CRESCHZZXXX,NOMUJPJTXXX,K.Tanaka,FX Tokyo
+NOM-FO-20260414-0530,14-Apr-2026,16-Apr-2026,UBS AG,Nomura International plc,FX Forward,GBP,GBP/USD,12000000,1.2942,Nomura Buys GBP / Sells USD,CLS,UBSWCHZHXXX,NOMUGB2LXXX,T.Ogawa,FX London
+NOM-FO-20260414-0540,14-Apr-2026,15-Apr-2026,Societe Generale,Nomura International plc,FX Spot,USD,EUR/USD,18000000,1.0851,Nomura Sells EUR / Buys USD,CLS,SOGEFRPPXXX,NOMUGB2LXXX,T.Ogawa,FX London
+NOM-FO-20260414-0550,14-Apr-2026,16-Apr-2026,HSBC Bank plc,Nomura International plc,FX Spot,USD,USD/JPY,8000000,153.38,Nomura Sells USD / Buys JPY,CLS,HSBCGB2LXXX,NOMUJPJTXXX,K.Tanaka,FX Tokyo
+NOM-FO-20260414-0560,14-Apr-2026,16-Apr-2026,RBC Capital Markets,Nomura International plc,FX Spot,CAD,USD/CAD,6000000,1.3825,Nomura Buys USD / Sells CAD,CLS,ROYCCAT2XXX,NOMUGB2LXXX,T.Ogawa,FX London

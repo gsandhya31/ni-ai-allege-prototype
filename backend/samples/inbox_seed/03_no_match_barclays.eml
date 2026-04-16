@@ -1,0 +1,28 @@
+From: Barclays Credit Ops <credit.ops@barclays.com>
+To: nomura.settlements@nomura.com
+Subject: CDS Trade Not Confirmed - BARC-CDS-20260413-0091
+Date: Tue, 14 Apr 2026 08:20:00 +0000
+Message-ID: <BARC-CDS-0091@barclays.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Hi Nomura Ops,
+
+Following up on CDS trade BARC-CDS-20260413-0091 executed Friday 13-Apr with your credit desk. Please see details below. We have submitted to DTCC but have no matching confirmation from your side.
+
+Barclays Trade Ref:  BARC-CDS-20260413-0091
+Counterparty:        Barclays Capital
+Nomura Entity:       Nomura International plc
+Product:             Credit Default Swap
+Trade Date:          13-Apr-2026
+Value Date:          14-Apr-2026
+Notional:            USD 50,000,000
+Direction:           Nomura Buys Protection
+Underlying:          iTraxx Main S41 - 5Y
+Settlement Method:   DTCC
+BIC:                 BARCGB2LXXX
+
+Can you please investigate urgently as effective date is today. This may be a voice trade that was not captured in your booking system.
+
+Regards,
+Barclays Credit Operations

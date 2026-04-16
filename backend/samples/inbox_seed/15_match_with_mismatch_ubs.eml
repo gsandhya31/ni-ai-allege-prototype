@@ -1,0 +1,29 @@
+From: UBS Settlements <settlements@ubs.com>
+To: nomura.settlements@nomura.com
+Subject: Alleged EUR/GBP Spot UBS-FX-20260414-1022 - Settlement Route Discrepancy
+Date: Tue, 14 Apr 2026 09:15:00 +0000
+Message-ID: <UBS-FX-1022@ubs.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Nomura Settlements,
+
+We are alleging the below EUR/GBP spot. Our records indicate a CLS settlement route, however our nostro team has not received matching CLS instructions from Nomura. Please confirm whether this trade is being settled via CLS or bilaterally.
+
+UBS Trade Ref:     UBS-FX-20260414-1022
+Counterparty:      UBS AG
+Nomura Entity:     Nomura Securities Co Ltd
+Product:           FX Spot
+Trade Date:        14-Apr-2026
+Value Date:        16-Apr-2026
+Currency Pair:     EUR/GBP
+Notional:          EUR 8,500,000
+Rate:              0.8567
+Direction:         Nomura Sells EUR / Buys GBP
+Settlement Method: CLS
+Our BIC:           UBSWCHZHXXX
+
+Please review urgently and reconfirm the settlement arrangement. EUR 8.5MM value 16-Apr-2026.
+
+Regards,
+UBS Settlements Operations

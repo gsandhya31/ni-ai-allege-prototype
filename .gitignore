@@ -1,0 +1,31 @@
+# Python
+backend/.venv/
+backend/__pycache__/
+backend/app/__pycache__/
+backend/app/services/__pycache__/
+backend/app/routes/__pycache__/
+**/__pycache__/
+*.pyc
+
+# Secrets — NEVER commit
+backend/.env
+.env
+.env.*
+!.env.example
+
+# Runtime state
+backend/app/db/
+backend/data/sent/*.eml
+
+# Frontend
+github_ni-ai-fx-otc-settlements/node_modules/
+github_ni-ai-fx-otc-settlements/dist/
+github_ni-ai-fx-otc-settlements/.lovable/
+
+# macOS
+.DS_Store
+
+# Docs output (Word/PDF generated files - large binaries)
+*.docx
+*.pdf
+*.pptx

@@ -1,0 +1,29 @@
+From: Ops Confirmations <ops.confirmations@db.com>
+To: nomura.settlements@nomura.com
+Subject: Alleged EUR/USD Forward DB-FX-20260410-4421 - RATE DISCREPANCY
+Date: Tue, 14 Apr 2026 07:00:00 +0000
+Message-ID: <DB-FX-4421@db.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Nomura Settlements —
+
+We are alleging the below EUR/USD forward where we have identified a rate and value date discrepancy between our records and your MT300 submission.
+
+Deutsche Bank Trade Ref:  DB-FX-20260410-4421
+Counterparty:             Deutsche Bank AG
+Nomura Entity (our bks):  Nomura Securities Co Ltd
+Product:                  FX Forward
+Trade Date:               10-Apr-2026
+Value Date:               15-Apr-2026
+Currency Pair:            EUR/USD
+Notional:                 EUR 120,000,000
+Rate:                     1.0845
+Direction:                Nomura Sells EUR / Buys USD
+Settlement Method:        CLS
+BIC:                      DEUTDEFFXXX
+
+Your MT300 shows rate 1.0842 with value date 16-Apr-2026. Please review, amend, and resubmit urgently. This is a large notional settling T+1.
+
+Regards,
+Deutsche Bank — Ops Confirmations

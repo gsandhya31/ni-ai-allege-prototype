@@ -1,0 +1,46 @@
+[
+  {
+    "seed": true,
+    "timestamp": "2026-04-14T05:00:00Z",
+    "actor": "system",
+    "actor_type": "tool",
+    "allege_id": null,
+    "action": "Daily housekeeping: inbox sweep started",
+    "details": "Automated 05:00 UTC inbox sweep initiated by scheduler",
+    "ai_recommended_action": null,
+    "followed_ai_recommendation": null
+  },
+  {
+    "seed": true,
+    "timestamp": "2026-04-14T05:02:14Z",
+    "actor": "Gopi",
+    "actor_type": "human",
+    "allege_id": "ALG-2026-0414-001",
+    "action": "Allege viewed",
+    "details": "Opened allege detail page for Goldman Sachs USD/JPY spot.",
+    "ai_recommended_action": "Submit settlement instruction via CLS. SSI for Goldman Sachs USD nostro at GSILUS33 needs to be added to the standing instructions database.",
+    "followed_ai_recommendation": null
+  },
+  {
+    "seed": true,
+    "timestamp": "2026-04-13T16:42:01Z",
+    "actor": "Gopi",
+    "actor_type": "human",
+    "allege_id": "ALG-2026-0414-013",
+    "action": "Marked resolved",
+    "details": "MT300 resubmitted via backup SWIFT gateway. CLS match confirmed.",
+    "ai_recommended_action": "MT300 rerouted via backup SWIFT gateway after primary BIC validation failure.",
+    "followed_ai_recommendation": true
+  },
+  {
+    "seed": true,
+    "timestamp": "2026-04-14T05:00:30Z",
+    "actor": "classifier",
+    "actor_type": "tool",
+    "allege_id": null,
+    "action": "Email classified",
+    "details": "Refinitiv invoice email classified as non-allege (keyword: 'invoice', no trade references).",
+    "ai_recommended_action": "Skip - not an allege",
+    "followed_ai_recommendation": null
+  }
+]

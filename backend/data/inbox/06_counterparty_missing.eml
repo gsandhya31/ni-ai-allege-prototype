@@ -1,0 +1,27 @@
+From: Settlement Ops <settlement.ops@jpmorgan.com>
+To: nomura.settlements@nomura.com
+Subject: Unmatched FX Spot - Ref JPM-FX-20260414-2200
+Date: Tue, 14 Apr 2026 09:30:00 +0000
+Message-ID: <JPM-FX-2200@jpmorgan.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Dear Nomura Settlements,
+
+We note the below trade is unmatched on our side. Please review and confirm status.
+
+Trade Ref:         JPM-FX-20260414-2200
+Product:           FX Spot
+Trade Date:        14-Apr-2026
+Value Date:        16-Apr-2026
+Currency Pair:     EUR/USD
+Notional:          USD 20,000,000
+Rate:              1.0855
+Direction:         Nomura Buys EUR / Sells USD
+Nomura Entity:     Nomura International plc
+Settlement:        CLS
+
+Please confirm at your earliest convenience.
+
+Regards,
+Settlement Operations

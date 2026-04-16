@@ -1,0 +1,45 @@
+From: Anna Mueller <anna.mueller@db.com>
+To: nomura.settlements@nomura.com
+Subject: RE: Alleged EUR/USD Spot DB-FX-20260414-5500 - FOUND / PLEASE IGNORE
+Date: Tue, 14 Apr 2026 10:45:00 +0000
+Message-ID: <DB-FX-5500-reply@db.com>
+In-Reply-To: <DB-FX-5500@db.com>
+References: <DB-FX-5500@db.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Hi Nomura Settlements team,
+
+Quick update — please ignore our earlier allege on DB-FX-20260414-5500. Our ops team found the trade on our side — it was booked against the wrong internal account and has now been moved. Your MT300 matches correctly and settlement will complete today. Apologies for the noise.
+
+No further action required from Nomura.
+
+Best,
+Anna Mueller
+Settlements, Deutsche Bank AG
+
+-----Original Message-----
+From: Anna Mueller <anna.mueller@db.com>
+Sent: Tuesday, 14 April 2026 08:30
+To: nomura.settlements@nomura.com
+Subject: Alleged EUR/USD Spot DB-FX-20260414-5500 - URGENT
+
+Nomura Settlements,
+
+We are alleging the below EUR/USD spot trade that we cannot locate in our system:
+
+DB Trade Ref:        DB-FX-20260414-5500
+Counterparty:        Deutsche Bank AG
+Product:             FX Spot
+Trade Date:          14-Apr-2026
+Value Date:          16-Apr-2026
+Currency Pair:       EUR/USD
+Notional:            EUR 30,000,000
+Rate:                1.0849
+Direction:           Nomura Buys EUR / Sells USD
+
+Please confirm status of this trade urgently. We have not received your MT300.
+
+Regards,
+Anna Mueller
+Deutsche Bank AG

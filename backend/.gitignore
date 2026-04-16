@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Runtime state
+app/db/
+data/sent/*.eml
+!data/sent/.gitkeep
+
+# macOS
+.DS_Store
