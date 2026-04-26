@@ -7,7 +7,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.config import FRONTEND_ORIGIN
-from app.routes import actions, admin, alleges, audit as audit_routes, process
+from app.routes import actions, admin, alleges, audit as audit_routes, process, screenshots as screenshots_routes
 from app.services import audit as audit_service, cases as cases_service
 
 
@@ -39,6 +39,7 @@ app.include_router(process.router, prefix="/api/process", tags=["process"])
 app.include_router(actions.router, prefix="/api/actions", tags=["actions"])
 app.include_router(admin.router, prefix="/api/admin", tags=["admin"])
 app.include_router(audit_routes.router, prefix="/api/audit", tags=["audit"])
+app.include_router(screenshots_routes.router, tags=["screenshots"])
 
 
 @app.get("/api/health")
